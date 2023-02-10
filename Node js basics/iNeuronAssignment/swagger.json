@@ -1,0 +1,90 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "1.0.0",
+        "title": "Swagger API Documentation",
+        "description": "A minimal and easy to follow example of what you need to create a CRUD style API in NodeJs using TypeScript"
+       
+    },
+
+    "tags": [
+        {
+            "name": "Product Orders",
+            "description": "API for product orders in the system"
+        }
+    ],
+
+    "paths": {
+
+        "/orders":{
+            "get": {
+                "tags": [
+                    "Product Orders"
+                ],
+                "summary": "Get all product orders in system",
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                        
+                    }
+                }
+            }
+        },
+        
+        "/orders/:id": {
+            "get": {
+                "tags": [
+                    "Product Orders"
+                ],
+                "summary": "Get one product order in system",
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                        
+                    }
+                }
+            },
+
+            "post": {
+                "tags": [
+                    "Product Orders"
+                ],
+                "summary": "Add product order in system",
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                        
+                    }
+                }
+            },
+
+            "put": {
+                "tags": [
+                    "Product Orders"
+                ],
+                "summary": "Update one product order in system",
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                        
+                    }
+                }
+            },
+
+            "delete": {
+                "tags": [
+                    "Product Orders"
+                ],
+                "summary": "Delete one product order in system",
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                        
+                    }
+                }
+            }
+        }
+
+        
+    }
+}
